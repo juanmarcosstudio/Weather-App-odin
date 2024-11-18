@@ -6,6 +6,19 @@
     <title>Weather App</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Weather App</h1>
+        <form id="weatherForm">
+          <input type="text" id="location" placeholder="Enter a city" required />
+          <button type="submit">Get Weather</button>
+        </form>
+        <div id="weatherInfo" class="hidden">
+          <h2 id="cityName"></h2>
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+        <div id="loading" class="hidden">Loading...</div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>
